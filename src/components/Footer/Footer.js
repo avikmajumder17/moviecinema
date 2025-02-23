@@ -8,19 +8,19 @@ export const Footer = () => {
 
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 sm:justify-center max-sm:justify-center">
             <li>
-                <a href="#" className="hover:underline me-4 md:me-6" target="_blank">Instagram</a>
+                <a href="/" className="hover:underline me-4 md:me-6" target="_blank">Instagram</a>
             </li>
 
             <li>
-                <a href="#" className="hover:underline me-4 md:me-6" target="_blank">LinkedIn</a>
+                <a href="/" className="hover:underline me-4 md:me-6" target="_blank">LinkedIn</a>
             </li>
 
             <li>
-                <a href="#" className="hover:underline me-4 md:me-6" target="_blank">Youtube</a>
+                <a href="/" className="hover:underline me-4 md:me-6" target="_blank">Youtube</a>
             </li>
 
             <li>
-                <a href="#" className="hover:underline" target="_blank">Github</a>
+                <a href="/" className="hover:underline" target="_blank">Github</a>
             </li>
         </ul>
       </div>

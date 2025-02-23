@@ -1,6 +1,5 @@
 import { AllRoutes } from "./routes/AllRoutes";
-import { Header, Footer, Card } from "./components";
-import { MovieList, MovieDetails, Search, PageNotFound } from "./pages";
+import { Header, Footer } from "./components";
 
 import './App.css';
 import Logo from "./assets/images/logo.png";
