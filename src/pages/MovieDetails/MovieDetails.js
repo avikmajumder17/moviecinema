@@ -8,8 +8,6 @@ export const MovieDetails = () => {
   const params = useParams();
   const [movies, setMovies] = useState({});
 
-  useTitle(`${movies.Title}`);
-
   useEffect(() => {
     const fetchMovie = async () => {
       const response = await fetch(`https://www.omdbapi.com/?i=${params.id}&apikey=43c5dedc`)
@@ -18,7 +16,10 @@ export const MovieDetails = () => {
       console.log(data);
     }
     fetchMovie();
-  }, [params.id])  
+  }, [params.id])
+
+  //eslint-disable-next-line
+  const pageTitle = useTitle(`${movies.Title}`);
 
   return (
     <main>
@@ -45,7 +46,7 @@ export const MovieDetails = () => {
                 
                 <span class="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
                 
-                <a href="#" class="text-md font-medium text-gray-900 underline hover:no-underline dark:text-white">{movies.imdbVotes} reviews</a>
+                <p class="ms-2 text-md font-bold text-gray-900 dark:text-white">{movies.imdbVotes} reviews</p>
               </div>
             </p>
 
