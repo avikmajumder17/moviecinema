@@ -40,7 +40,7 @@ export const Header = ({Logo}) => {
           <Link to="/" className="flex items-center space-x-3 max-sm:space-x-0 rtl:space-x-reverse">
             <img src={Logo} className="h-12" alt="Flowbite Logo" />
             
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white max-sm:text-xl">MovieCinema</span>
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white max-sm:text-xl">MovieCinemate</span>
           </Link>
           
           <div className="flex md:order-2">
