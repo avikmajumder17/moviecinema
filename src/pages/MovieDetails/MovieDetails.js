@@ -8,6 +8,8 @@ export const MovieDetails = () => {
   const params = useParams();
   const [movies, setMovies] = useState({});
 
+  useTitle(`${movies.Title}`);
+
   useEffect(() => {
     const fetchMovie = async () => {
       const response = await fetch(`https://www.omdbapi.com/?i=${params.id}&apikey=43c5dedc`)
@@ -16,10 +18,7 @@ export const MovieDetails = () => {
       console.log(data);
     }
     fetchMovie();
-  }, [params.id])
-
-  //eslint-disable-next-line
-  const pageTitle = useTitle(`${movies.Title}`);
+  }, [params.id])  
 
   return (
     <main>
