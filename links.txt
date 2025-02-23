@@ -1,0 +1,14 @@
+API Key: 43c5dedc
+Base URL: http://www.omdbapi.com/
+
+Individual:
+https://www.omdbapi.com/?i=tt3896198&apikey=43c5dedc
+
+Superhero:
+https://www.omdbapi.com/?s=avenger&apikey=43c5dedc
+
+Horror:
+https://www.omdbapi.com/?s=horror&apikey=43c5dedc
+
+Comedy:
+https://www.omdbapi.com/?s=comedy&apikey=43c5dedc
