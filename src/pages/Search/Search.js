@@ -10,7 +10,7 @@ export const Search = () => {
 
   const { data: movies } = useSearch(queryTerm);
 
-  const pageTitle = useTitle(`Search Result For ${queryTerm}`);
+  useTitle(`Search Result For ${queryTerm}`);
 
   return (
     <main>
